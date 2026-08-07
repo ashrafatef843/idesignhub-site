@@ -43,4 +43,21 @@
   } else {
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
+
+  var demoVideo = document.getElementById('demoVideo');
+  if (demoVideo && 'IntersectionObserver' in window) {
+    var videoObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            demoVideo.play().catch(function () {});
+          } else {
+            demoVideo.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    videoObserver.observe(demoVideo);
+  }
 })();

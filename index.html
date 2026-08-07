@@ -44,6 +44,12 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-sparkles" aria-hidden="true">
+      <svg class="spark spark-1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg>
+      <svg class="spark spark-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg>
+      <svg class="spark spark-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg>
+      <svg class="spark spark-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg>
+    </div>
     <div class="container hero-inner">
       <div class="hero-copy reveal">
         <span class="eyebrow">Dream It. Design It. Build It.</span>
@@ -53,7 +59,7 @@
           detail, and verified workshops manufacture it for real.
         </p>
         <div class="hero-actions">
-          <a href="#how-it-works" class="btn btn-primary">Start Designing ↓</a>
+          <a href="#how-it-works" class="btn btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg> Start Designing</a>
           <a href="mailto:ashraf.atef@i-designhub.com?subject=iDesign%20Hub%20—%20Inquiry" class="btn btn-ghost">Get in Touch</a>
         </div>
         <div class="hero-stats">
@@ -96,7 +102,7 @@
       </div>
       <div class="phone-single reveal" style="--delay:120ms">
         <div class="phone phone-lg phone-video">
-          <video controls playsinline preload="metadata" poster="assets/video/app-walkthrough-poster.jpg">
+          <video id="demoVideo" controls playsinline muted preload="metadata" poster="assets/video/app-walkthrough-poster.jpg">
             <source src="assets/video/app-walkthrough.mp4" type="video/mp4">
           </video>
         </div>
@@ -302,14 +308,26 @@
       </div>
 
       <div class="tech-strip reveal">
-        <span>Artificial Intelligence</span><span>·</span>
-        <span>Laser Engraving</span><span>·</span>
-        <span>Laser Cutting</span><span>·</span>
-        <span>UV Printing</span><span>·</span>
-        <span>Digital Printing</span><span>·</span>
-        <span>Computerized Embroidery</span><span>·</span>
-        <span>CNC Manufacturing</span><span>·</span>
-        <span>On-Demand Manufacturing</span>
+        <div class="tech-track">
+          <span>Artificial Intelligence</span><span class="dot">·</span>
+          <span>Laser Engraving</span><span class="dot">·</span>
+          <span>Laser Cutting</span><span class="dot">·</span>
+          <span>UV Printing</span><span class="dot">·</span>
+          <span>Digital Printing</span><span class="dot">·</span>
+          <span>Computerized Embroidery</span><span class="dot">·</span>
+          <span>CNC Manufacturing</span><span class="dot">·</span>
+          <span>On-Demand Manufacturing</span><span class="dot">·</span>
+        </div>
+        <div class="tech-track" aria-hidden="true">
+          <span>Artificial Intelligence</span><span class="dot">·</span>
+          <span>Laser Engraving</span><span class="dot">·</span>
+          <span>Laser Cutting</span><span class="dot">·</span>
+          <span>UV Printing</span><span class="dot">·</span>
+          <span>Digital Printing</span><span class="dot">·</span>
+          <span>Computerized Embroidery</span><span class="dot">·</span>
+          <span>CNC Manufacturing</span><span class="dot">·</span>
+          <span>On-Demand Manufacturing</span><span class="dot">·</span>
+        </div>
       </div>
     </div>
   </section>
@@ -326,9 +344,9 @@
           reviews before choosing who manufactures it.
         </p>
         <ul class="check-list">
-          <li>Onboarding verified workshop partners</li>
-          <li>Processing real customer design requests</li>
-          <li>Building quote comparison before full launch</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg>Onboarding verified workshop partners</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg>Processing real customer design requests</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z"/></svg>Building quote comparison before full launch</li>
         </ul>
       </div>
       <div class="phone-single reveal" style="--delay:120ms">
@@ -367,6 +385,7 @@
   <section class="section vision-section" id="vision">
     <div class="container">
       <div class="vision-quote reveal">
+        <span class="quote-mark" aria-hidden="true">&#8220;</span>
         <p>
           “Our goal is to redefine personalized commerce by making AI-driven design and on-demand
           manufacturing accessible to everyone — from individual consumers creating unique gifts to
